@@ -7,11 +7,11 @@ function Xcounter() {
 
 
     const increament = () => {
-        setCount(count + 1);
+        setCount(prevCount => prevCount + 1); 
     };
 
     const decreamnet =() => {
-        setCount(count - 1);
+        setCount(prevCount => prevCount - 1); 
     };
 
 
