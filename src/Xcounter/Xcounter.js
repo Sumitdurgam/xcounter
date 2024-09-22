@@ -4,11 +4,11 @@ function Xcounter() {
     const [valueOfCount, setValueOfCount] = useState(0);
 
 
-    const handleIncrement = () => {
+    const handleIncreament = () => {
         setValueOfCount(prevCount => prevCount + 1); 
     };
 
-    const handleDecrement =() => {
+    const handleDecreament =() => {
         setValueOfCount(prevCount => prevCount - 1); 
     };
 
@@ -18,8 +18,8 @@ function Xcounter() {
             <h1> Counter App</h1>
             <p>Count: {valueOfCount}</p>
             <div>
-                <button onClick={handleIncrement}>Increament</button>
-                <button onClick={handleDecrement}>Decreamnet</button>
+                <button onClick={handleIncreament}>Increament</button>
+                <button onClick={handleDecreament}>Decreament</button>
             </div>
         </div>
     );
